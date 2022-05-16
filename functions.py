@@ -27,17 +27,21 @@ class Custom_Transformer(BaseEstimator, TransformerMixin):
 
 
 
-def get_polar_words(classifier):
+def get_polar_words(classifier,top):
     coeff_pos = classifier['Multinomial NB'].feature_log_prob_[1]
     coeff_neg = classifier['Multinomial NB'].feature_log_prob_[0]
     words = classifier['Tfidf vectorizer'].get_feature_names_out()
+    words_join=[]
+    for w in words:
+        words_join.append(w.replace(" ", "_"))
+    words_join = np.array(words_join)
     polarity = coeff_pos-coeff_neg
     polarity_sorted = np.sort(polarity)
     index_sort = np.argsort(polarity)
-    words_sorted = words[index_sort]
-    words_positive = words_sorted[-100:]
-    words_negative = words_sorted[:100]
+    words_sorted = words_join[index_sort]
+    words_positive = words_sorted[-top:]
+    words_negative = words_sorted[:top]
     wc1 = WordCloud(width = 1000, height = 500).generate(" ".join(words_positive))
     wc2 = WordCloud(width = 1000, height = 500).generate(" ".join(words_negative))
-    return wc1,wc2
-    
+    return wc1,wc2,words_join
+
