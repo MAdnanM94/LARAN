@@ -11,10 +11,15 @@ Through an analysis of written transcriptions from U.S. presidential and vice-pr
 
 
 ## Contributors
--Lisa Berger – Polarization analysis
+-Lisa Berger - Polarization analysis
+
 -Aniket Joshi – Data gathering, Cleaning and Processing, BERT
+
 -Reza Averly – Classification (BERT)
+
 -Adnan Mahmood – Data Visualization and Classification (MNB)
+
 -Nikhil Ajgaonkar – Data Visualization and Classification (MNB)
+
 
 This project was created as part of the [Erdös Institute's DataScience Bootcamp 2021](https://www.erdosinstitute.org/code).
