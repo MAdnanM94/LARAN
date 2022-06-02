@@ -2,9 +2,12 @@
 
 Through an analysis of written transcriptions from U.S. presidential and vice-presidential debates, we make progress toward determining terminology and rhetoric that is more commonly used by the Democratic or Republican political parties. We used various NLP models such as Naive Bayes, random forests, deep-learning transformer models (BERT) for classification of text polarity over time.
 
+## Dataset
+- **finaldata_party.csv** contains the dataset we use for our project, with _result_ correspond to whether the speaker won the debate and _party_ correspond to his/her political party 
+
 ## Notebooks
 
-- **BERT transformer models**_(written by Aniket Joshi, Reza Averly)_ contains code to train and fit various pretrained NLP models from hugging face including ROBERTA, BERT, DistilBERT
+- **BERT_model.ipynb**_(written by Aniket Joshi, Reza Averly)_ contains code to train and fit various pretrained NLP models from hugging face including ROBERTA, BERT, DistilBERT
 
 - **MNB pipeline**
 
