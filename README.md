@@ -4,22 +4,20 @@ Through an analysis of written transcriptions from U.S. presidential and vice-pr
 
 ## Notebooks
 
-- **BERT transformer models**_(written by Aniket Joshi, Reza Averly)
+- **BERT transformer models**_(written by Aniket Joshi, Reza Averly)_ contains code to train and fit various pretrained NLP models from hugging face including ROBERTA, BERT, DistilBERT
+
+- **MNB pipeline**
 
 
 
 
 
 ## Contributors
--Lisa Berger - Polarization analysis
-
--Aniket Joshi – Data gathering, Cleaning and Processing, BERT
-
--Reza Averly – Classification (BERT)
-
--Adnan Mahmood – Data Visualization and Classification (MNB)
-
--Nikhil Ajgaonkar – Data Visualization and Classification (MNB)
+- Lisa Berger - Polarization analysis
+- Aniket Joshi – Data gathering, Cleaning and Processing, BERT
+- Reza Averly – Classification (BERT)
+- Adnan Mahmood – Data Visualization and Classification (MNB)
+- Nikhil Ajgaonkar – Data Visualization and Classification (MNB)
 
 
 This project was created as part of the [Erdös Institute's DataScience Bootcamp 2021](https://www.erdosinstitute.org/code).
